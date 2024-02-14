@@ -13,7 +13,6 @@ export default function Tasks({ tasks, change, deleted }) {
       {tasks.length > 0 && (
         <ul className="p-4 mt-8 rounded-md bg-stone-100">
           {tasks.map((task) => {
-            console.log(task);
             return (
               <li key={task.id} className="flex justify-between my-4">
                 <span>{task.text}</span>
